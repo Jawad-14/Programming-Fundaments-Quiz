@@ -3,10 +3,15 @@ using namespace std;
 
 int main() {
     int n, itemsSold, profitPerItem, totalProfit = 0;
+    
+    cout << "Enter number of food items: ";
     cin >> n;
     
-    for(int i = 0; i < n; i++) {
-        cin >> itemsSold >> profitPerItem;
+    for(int i = 1; i <= n; i++) {
+        cout << "Enter items sold for item " << i << ": ";
+        cin >> itemsSold;
+        cout << "Enter profit per item " << i << ": ";
+        cin >> profitPerItem;
         totalProfit += itemsSold * profitPerItem;
     }
     
