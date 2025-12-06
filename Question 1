@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n, itemsSold, profitPerItem, totalProfit = 0;
+    cin >> n;
+    
+    for(int i = 0; i < n; i++) {
+        cin >> itemsSold >> profitPerItem;
+        totalProfit += itemsSold * profitPerItem;
+    }
+    
+    cout << "Total Profit = " << totalProfit << endl;
+    
+    if(totalProfit > 5000) {
+        cout << "Great Day" << endl;
+    }
+    
+    return 0;
+}
